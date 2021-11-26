@@ -1,0 +1,136 @@
+.header
+	min-height: 680px
+	background: url(/img/bg.png) center (center/cover) no-repeat
+	&__wrapper
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 23px 0 10px 0
+	&__logo 
+		img
+			width: 95px
+			height: 99px
+	&__ul
+		display: flex
+		justify-content: center
+		align-items: center
+	&__menu
+		line-height: 25px
+		border-right: 2px dotted #767070
+		&:last-child
+			border-right: none
+		a	
+			font-family: Roboto
+			font-size: 15px
+			line-height: 1.13
+			color: #fff
+			padding: 10px
+			cursor: pointer
+			&:hover
+				color: #ec644b
+				border-bottom: 2px solid #ec644b
+	&__contacts
+		display: flex
+		flex-direction: column
+		margin: 5px 19px 0 0
+		font-size: 19px
+		line-height: 1.26
+		text-align: right
+		color: #fff
+		a
+			color: #fff
+		span
+			font-size: 14px
+			line-height: 24px	
+	&__btn
+		width: 160px
+		height: 45px
+		padding: 18px 23px
+		border-radius: 25px
+		background-color: #ec644b
+		font-size: 11px
+		text-align: center
+		color: #fff
+		text-transform: uppercase
+	&__text
+		margin-top: 10px
+		font-size: 24px
+		font-weight: 300
+		text-align: center
+		color: #fff
+	&__title
+		margin-top: 26px
+		font-size: 72px
+		font-weight: bold
+		text-align: center
+		color: #ec644b
+		text-transform: uppercase
+		&_edit
+			font-size: 100px
+			color: red 
+	&__subtitle
+		margin-top: 9px
+		font-size: 42px
+		font-weight: normal
+		text-align: center
+		color: #fff
+	&__line
+		margin: 38px 0 21px 0
+		span
+			display: block
+			position: relative
+			width: 10px
+			height: 10px
+			border-radius: 50%
+			background-color: #fff
+			margin: 0 auto
+			&::after
+				content: ''
+				position: absolute
+				height: 2px
+				width: 390px 
+				left: 20px	
+				top: 50% 
+				transform: translateY(-50%)
+				background: #fff
+			&::before
+				content: ''
+				position: absolute
+				height: 2px
+				width: 390px 
+				right: 20px	
+				top: 50% 
+				transform: translateY(-50%)
+				background: #fff
+	&__items
+		display: flex
+		justify-content: space-between
+		width: 262px
+		
+	&__img
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 262px
+		height: 70px
+	&__item-text	
+		font-size: 16px
+		font-weight: 300
+		line-height: 1.38
+		text-align: center
+		color: #fff
+.bottom__btn	
+	display: block
+	width: 230px
+	height: 57px
+	position: relative
+	left: 50%
+	transform: translate(-50%)
+	margin: 39px 0 81px 0
+	padding: 23px 45px
+	font-size: 14px
+	background-color: #ec644b
+	cursor: pointer
+	
+
+		
