@@ -18,11 +18,20 @@ $(document).ready(function(){
 	// slide 
 
 	$('.carousel__inner').slick({
-		slidesToShow: 1,
+		slidesToShow: 2,
 		slidesToScroll: 1,
 		prevArrow: '<button type="button" class="slick-prev"><img src="img/slick_prev.png" alt="prev"></button>',
 		nextArrow: '<button type="button" class="slick-next"><img src="img/slock_next.png" alt="next"></button>',
 	});
 	    
+	// modal 
+	
+	$('[data-modal = callback]').on('click', function () {
+		$('.overlay, #callback').fadeIn('slow');
+	});
+
+	$('.modal__close').on('click', function () {
+		$('.overlay, #callback').fadeOut('slow');
+	});
   });
   
